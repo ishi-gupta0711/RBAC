@@ -4,8 +4,23 @@
         {
             "label": "Git Push Shortcut",
             "type": "shell",
-            "command": "git add . && git commit -m 'Update RBAC' && git push",
+            // We use cmd.exe specifically to ensure && works on Windows
+            "command": "git add . && git commit -m \"${input:commitMessage}\" && git push",
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/d", "/c"]
+                }
+            },
             "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "commitMessage",
+            "type": "promptString",
+            "description": "Enter your RBAC update message",
+            "default": "Update RBAC"
         }
     ]
 }
