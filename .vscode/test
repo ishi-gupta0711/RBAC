@@ -1,0 +1,5 @@
+Shortcut,Command,When to use
+Alt + G,Sync,When you want to push your local project code to GitHub.
+Alt + A,Add,To grant someone new access. Stick to Admin or Push for now.
+Alt + L,Audit,To see a live list of who currently has access to the repo.
+Alt + R,Revoke,If a developer leaves the project and you need to remove them immediately.
