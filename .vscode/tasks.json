@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Git Push Shortcut",
+            "type": "shell",
+            "command": "git add . && git commit -m 'Update RBAC' && git push",
+            "problemMatcher": []
+        }
+    ]
+}
